@@ -847,33 +847,37 @@
                         </div>
                     </div>
 
-                    <form id="myform" class="contact__form grid" action="https://formspree.io/f/mdoydndl" method="POST">
+                    <!--action="https://formspree.io/f/mdoydndl"-->
+                    <form class="contact1-form contact__form grid" name="gform" id="gform" target="hidden_iframe" onsubmit="submitted=true;"
+                    action="https://docs.google.com/forms/d/1k1MCk7q23c7g3xTkAQQoCOUnewzzIFtjB8gwFBriLIs/formResponse?">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input class="contact__input" type="text" name="_name">
+                                <input class="contact__input" type="text" name="entry.2086206110" id="entry.2086206110">
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input class="contact__input" type="email" name="_replyto">
+                                <input class="contact__input" type="email" name="entry.2038336753" id="entry.2038336753">
                             </div>
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Subject</label>
-                            <input class="contact__input" type="text" name="_subject">
+                            <input class="contact__input" type="text" name="entry.1570795268" id="entry.1570795268">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
-                            <textarea id="" cols="0" rows="7" class="contact__input" name="message"></textarea>
+                            <textarea cols="0" rows="7" class="contact__input" name="entry.210161652" id="entry.210161652"></textarea>
                         </div>
                         
                         <div>
-                            <a href="javascript:;index.html#contact" onclick="document.getElementById('myform').submit()" class="button button--flex" >
+                            <button class="button--flex" type="submit" id="cf-submit">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
                         </div>
                     </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe"
+                            style="display:none;" onload="if(submitted){redirect()}"></iframe>
                 </div>
 
             </section>
@@ -922,6 +926,9 @@
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+
+        <!--==================== CONTACT FORM JS ====================-->
+        <script src="assets/js/submit.js"></script>
 
         <!--==================== TYPED JS ====================-->
         <script src="assets/js/typed.js"></script>
