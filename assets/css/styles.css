@@ -342,6 +342,19 @@ img {
 }
 
 /*========== BUTTONS ==========*/
+button{
+  display: inline-block;
+  background-color: var(--first-color);
+  box-shadow: none;
+  border: 0;
+  color: #FFF;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
 .button {
   display: inline-block;
   background-color: var(--first-color);
