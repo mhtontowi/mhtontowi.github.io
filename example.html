@@ -653,25 +653,26 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form">
+                    <form class="contact__form" name="gform" id="gform" target="hidden_iframe" onsubmit="submitted=true;"
+                    action="https://docs.google.com/forms/d/1j7P8a-fPlWpm5PJCyMHDT6O5hxiEoFogN7dsE_LIiOM/formResponse?">
                         <div class="contact__inputs">
                             <div class="contact__content">
-                                <input type="email" placeholder=" " class="contact__input">
+                                <input type="text" placeholder=" " class="contact__input" name="entry.298324244" id="entry.298324244">
                                 <label for="" class="contact__label">Name</label>
                             </div>
 
                             <div class="contact__content">
-                                <input type="email" placeholder=" " class="contact__input">
+                                <input type="email" placeholder=" " class="contact__input" name="entry.160443622" id="entry.160443622">
                                 <label for="" class="contact__label">Email</label>
                             </div>
 
                             <div class="contact__content">
-                                <input type="tel" placeholder=" " class="contact__input">
+                                <input type="text" placeholder=" " class="contact__input" name="entry.1803379321" id="entry.1803379321">
                                 <label for="" class="contact__label">Telefon</label>
                             </div>
 
                             <div class="contact__content">
-                                <select id="device" name="device" class="contact__input">
+                                <select class="contact__input" name="entry.1787189691" id="entry.1787189691">
                                     <option value="volvo">Bitte wählen Sie</option>
                                     <option value="waschmaschine">Waschmaschine</option>
                                     <option value="spülmaschine">Spülmaschine</option>
@@ -697,7 +698,7 @@
                             </div>
 
                             <div class="contact__content contact__area">
-                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <textarea placeholder=" " class="contact__input" name="entry.1105593547" id="entry.1105593547"></textarea>                              
                                 <label for="" class="contact__label">Nachricht</label>
                             </div>
                         </div>
@@ -707,6 +708,8 @@
                             <i class="ri-arrow-right-up-line button__icon"></i>
                         </button>
                     </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe"
+                            style="display:none;" onload="if(submitted){redirect()}"></iframe>
                 </div>
             </section>
         </main>
@@ -784,5 +787,8 @@
         
         <!--=============== MAIN JS ===============-->
         <script src="assets_example/js/main.js"></script>
+
+        <!--=============== SUBMIT JS ===============-->
+        <script src="assets_example/js/submit.js"></script>
     </body>
 </html>
